@@ -1,0 +1,13 @@
+Created on Tue Mar 10 10:51:30 2026
+
+@author: User
+"""
+
+#take input from the user
+string = input("enter a sting:")
+
+#reverse the string using slicing
+reversed_string = string[::-1]
+
+#print the result 
+print("reversed string:", reversed_string)
