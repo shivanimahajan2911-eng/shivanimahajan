@@ -1,0 +1,10 @@
+# social media accounts
+"""
+Created on Tue Mar 17 10:54:12 2026
+
+@author: shivani
+"""
+account1 = {"rahul", "sneha", "amit", "pooja"}
+account2 = {"amit", "pooja", "neha", "rohan"}
+common = account1.intersection(account2)
+print("common followers:", common)
