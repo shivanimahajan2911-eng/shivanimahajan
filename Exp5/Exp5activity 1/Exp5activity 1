@@ -1,0 +1,11 @@
+# class attendance system
+"""
+Created on Tue Mar 17 10:42:49 2026
+
+@author: shivani
+"""
+classA = {1, 2, 3, 4, 5}
+classB = {3, 4, 5, 6, 7}
+
+common_students = classA.intersection(classB)
+print("students present in both classes:", common_students)
