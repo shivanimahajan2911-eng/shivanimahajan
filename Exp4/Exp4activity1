@@ -1,0 +1,13 @@
+#students marks average and tpper 
+"""
+Created on Wed Apr  1 15:01:36 2026
+
+@author: shivani mahajan
+"""
+marks = [85, 92, 78, 95, 88]
+
+average = sum(marks) / len(marks)
+topper_marks = max(marks)
+
+print(f"Average Marks: {average}")
+print(f"Topper Marks: {topper_marks}")
