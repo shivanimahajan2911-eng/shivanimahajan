@@ -1,0 +1,11 @@
+# program of traffic police system
+"""
+Created on Wed Apr  1 12:34:56 2026
+
+@author:shivani mahajan
+"""
+speed = int(input("Enter speed in km/h: "))
+
+if speed > 60:
+    print("Fine Message: You are overspeeding!")
+
