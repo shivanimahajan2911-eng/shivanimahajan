@@ -1,0 +1,12 @@
+reverse customer feedback
+"""
+Created on Wed Apr  1 15:05:50 2026
+
+@author: shivani mahajan
+"""
+feedback = "The service was excellent!"
+
+reversed_feedback = feedback[::-1]
+
+print(f"Original: {feedback}")
+print(f"Reversed: {reversed_feedback}")
