@@ -1,0 +1,11 @@
+# ticket booking seat pattern
+"""
+Created on Wed Apr  1 13:56:41 2026
+
+@author:shivani mahajan
+"""
+rows = ['A', 'B', 'C', 'D', 'E']
+for row_letter in rows:
+    for seat_num in range(1, 11):
+        print(f"{row_letter}{seat_num}", end="  ")
+    print() # Moves to the next row
