@@ -1,0 +1,15 @@
+#ricursive function for stairs
+"""
+Created on Wed Apr  1 13:49:24 2026
+
+@author: shivani mahajan
+"""
+def count_stairs(n):
+    # Base case: if there are no more steps
+    if n == 0:
+        return 0
+    # Recursive step: add 1 and call function for remaining steps
+    return 1 + count_stairs(n - 1)
+
+total_steps = int(input("Enter number of stairs: "))
+print(f"Total stairs climbed: {count_stairs(total_steps)}")
