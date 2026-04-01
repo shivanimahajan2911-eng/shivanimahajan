@@ -1,0 +1,13 @@
+# banck loan approval
+"""
+Created on Wed Apr  1 12:47:04 2026
+
+@author:Shivani mahajan
+"""
+
+salary = int(input("Enter your salary: "))
+
+if salary >= 25000:
+    print("Approved")
+else:
+    print("Rejected")
