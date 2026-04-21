@@ -1,0 +1,19 @@
+# Read Complaints
+"""
+Created on Tue Apr 21 20:09:59 2026
+
+@author: shivani mahajan
+"""
+
+filename = "complaints.txt"
+
+print("--- List of Complaints ---")
+try:
+    with open(filename, "r") as file:
+        content = file.read()
+        if content:
+            print(content)
+        else:
+            print("The complaint file is currently empty.")
+except FileNotFoundError:
+    print("Error: complaints.txt file not found.")
