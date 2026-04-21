@@ -1,0 +1,17 @@
+# Student Attendance
+"""
+Created on Tue Apr 21 20:07:20 2026
+
+@author: shivani mahajan
+"""
+
+filename = "attendance.txt"
+
+# Create/Append attendance records
+name = input("Enter Student Name: ")
+status = input("Enter Attendance (Present/Absent): ")
+
+with open(filename, "a") as file:
+    file.write(f"{name}: {status}\n")
+
+print("Attendance record updated successfully.")
