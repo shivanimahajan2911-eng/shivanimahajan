@@ -1,0 +1,24 @@
+# Example usage
+"""
+Created on Wed Apr 22 09:01:31 2026
+
+@author: shivani mahajan
+"""
+
+class Employee:
+    def __init__(self, name, emp_id, basic_salary):
+        self.name = name
+        self.emp_id = emp_id
+        self.basic_salary = basic_salary
+
+    def display_details(self):
+        print("Name:", self.name)
+        print("Employee ID:", self.emp_id)
+        print("Basic Salary:", self.basic_salary)
+
+
+# Direct values
+emp = Employee("Shivani", "E102", 25000)
+
+print("\nEmployee Details:")
+emp.display_details()
