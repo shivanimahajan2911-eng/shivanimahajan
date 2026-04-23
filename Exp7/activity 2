@@ -1,0 +1,21 @@
+#student class
+"""
+Created on Thu Apr 23 19:53:35 2026
+
+@author: shivani mahajan
+"""
+
+class Student:
+    def __init__(self):
+        self.marks = 80
+
+    def grade(self):
+        if self.marks >= 75:
+            print("Grade: A")
+        elif self.marks >= 50:
+            print("Grade: B")
+        else:
+            print("Fail")
+
+s = Student()
+s.grade()
