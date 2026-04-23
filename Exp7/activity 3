@@ -1,0 +1,17 @@
+# salary with bonus
+"""
+Created on Thu Apr 23 20:04:07 2026
+
+@author: shivani mahajan
+"""
+class Employee:
+    def __init__(self):
+        self.salary = 25000
+
+    def calculate(self):
+        total = self.salary + (self.salary * 0.1)
+        print("Salary with Bonus:", total)
+
+e = Employee()
+e.calculate()
+
