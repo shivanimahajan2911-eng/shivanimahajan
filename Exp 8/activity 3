@@ -1,0 +1,16 @@
+# prevent crash:Dividing bill by zero
+"""
+Created on Thu Apr 23 20:52:57 2026
+
+@author: shivani mahajan
+"""
+
+def split_bill(total_bill, people):
+    try:
+        share = total_bill / people
+        print(f"Each person pays: ${share:.2f}")
+    except ZeroDivisionError:
+        print("Error: You cannot split a bill among zero people!")
+
+# Example call
+split_bill(150.00, 0)
