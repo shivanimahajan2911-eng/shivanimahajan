@@ -1,0 +1,21 @@
+# ATM withdrawal system
+"""
+Created on Thu Apr 23 20:30:23 2026
+
+@author: shivani mahajan
+"""
+
+class InsufficientBalanceError(Exception):
+    pass
+
+def withdraw_money(balance, amount):
+    try:
+        if amount > balance:
+            raise InsufficientBalanceError(f"Insufficient funds! Your balance is ${balance}.")
+        balance -= amount
+        print(f"Withdrawal successful. New balance: ${balance}")
+    except InsufficientBalanceError as e:
+        print(e)
+
+# Example call
+withdraw_money(500, 600)
