@@ -1,0 +1,17 @@
+#Generate OTP 
+"""
+Created on Tue Apr 28 10:56:09 2026
+
+@author:Shivani Mahajan
+"""
+
+import random
+
+# 100000 te 999999 madhla kontahi random number
+otp = random.randint(100000, 999999)
+
+print("--- Security System ---")
+print(f"Your OTP is: {otp}")
+print("Author: Shivani Mahajan")
+
+
