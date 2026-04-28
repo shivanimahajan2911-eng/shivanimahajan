@@ -1,0 +1,25 @@
+#Hospital appointment system
+"""
+Created on Tue Apr 28 10:52:15 2026
+
+@author: Shivani Mahajan
+"""
+
+# Description: Display today's date for Hospital System
+
+from datetime import datetime
+
+def display_appointment_date():
+   
+    today = datetime.now()
+    
+    # Date format: Day, Date Month Year
+    formatted_date = today.strftime("%A, %d %B %Y")
+    
+    # Output printing
+    print("--- SMART HOSPITAL SYSTEM ---")
+    print("Patient Check-in Date: " + formatted_date)
+    print("Managed by: Shivani Mahajan")
+
+# Function call
+display_appointment_date()
