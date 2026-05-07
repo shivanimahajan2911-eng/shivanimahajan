@@ -1,0 +1,49 @@
+import streamlit as st
+
+# Title
+st.title("⚕️ BMI Health Checker")
+
+st.write("Check your Body Mass Index (BMI)")
+
+# User inputs
+weight = st.number_input("Enter your weight (kg)", min_value=1.0)
+height = st.number_input("Enter your height (meters)", min_value=0.1)
+
+# Calculate BMI
+if st.button("Calculate BMI"):
+    bmi = weight / (height ** 2)
+
+    st.success(f"Your BMI is: {bmi:.2f}")
+
+    # BMI Categories
+    if bmi < 18.5:
+        st.warning("You are Underweight")
+    elif 18.5 <= bmi < 24.9:
+        st.success("You are Normal Weight")
+    elif 25 <= bmi < 29.9:
+        st.warning("You are Overweight")
+    else:
+        st.error("You are Obese")
+
+    # Health tips
+    st.markdown("### Health Tips")
+    
+    if bmi < 18.5:
+        st.write("• Eat nutritious food")
+        st.write("• Include protein in diet")
+        st.write("• Consult a doctor if needed")
+
+    elif 18.5 <= bmi < 24.9:
+        st.write("• Maintain a balanced diet")
+        st.write("• Exercise regularly")
+        st.write("• Stay hydrated")
+
+    elif 25 <= bmi < 29.9:
+        st.write("• Reduce junk food")
+        st.write("• Do daily exercise")
+        st.write("• Eat more fruits and vegetables")
+
+    else:
+        st.write("• Follow a healthy diet plan")
+        st.write("• Exercise daily")
+        st.write("• Consult a healthcare professional")
